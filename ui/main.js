@@ -1,7 +1,7 @@
 //counter code
 var button = document.getElementById('counter');
 button.onclick=function () {
-    //make a request to a counter endpoint
+    //make a request oject
     var request=new XMLHttpRequest();
     
     //capture the response and store it in a variable
@@ -18,6 +18,6 @@ button.onclick=function () {
         //not yet done
     };
     //make the request 
-    request.open('GET','http://anujeet98.imad.hasura-app.io',true);
+    request.open('GET','http://anujeet98.imad.hasura-app.io/counter',true);
     request.send(null);
 };
